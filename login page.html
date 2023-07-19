@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/my960.css">
+    <link rel="stylesheet" href="asset/css/mystyle.css">
+    <title>Login Page</title>
+    <style>
+        .box {
+            border: solid;
+        }
+    </style>
+    <script>
+        function abc() {
+            var x = document.getElementById("nm");
+            var y = x.value;
+            var p = document.getElementById("pwd");
+            var z = p.value;
+            if (y == "jayditya" && z == "1234") 
+            {
+                window.open("Book ticket.html","-");
+            }
+            else 
+            {
+            alert("Wrong Username or Password");
+                x.value = "";
+                p.value = "";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container_12">
+        <div class="grid_3 mlogo">
+            <img src="asset/photos/pic.jfif" width="235px" height="110px">
+        </div>
+        <div class="grid_9 cname">
+            PVR Cinemas
+        </div>
+        <div class="clear"> </div>
+        <form>
+        <div class="grid_4 login"style="text-align:center;background-color:pink">
+            <h1>Login</h1>
+            <p>Username</p>
+            <input type="text" id="nm" name="nm" value="" placeholder="Enter name" required></input> 
+            <p>Password</p>
+            <input type="password" id="pwd" name="pwd" value="" placeholder="Enter pw" required></input> 
+            <h5>Forget password</h5>
+            <div class="logb">
+            <button type="submit" onclick="abc()">Submit</button>
+            </div>
+        </form>
+        </div>
+        <div class="clear"> </div>
+        <div class="grid_12 sect">
+           The Latest Play
+        </div>
+        <div class="grid_4 servicess">
+            <img src="asset/photos/pic1.avif" width="280px" height="300px">
+        </div>
+        <div class="grid_4 servicess">
+            <img src="asset/photos/pic22.avif" width="280px" height="300px">
+        </div>
+        <div class="grid_4 servicess">
+            <img src="asset/photos/pic3.avif" width="280px" height="300px">
+        </div>
+        <div class="grid_12 fin">
+            <img src="asset/photos/stream.avif" ; width="960px" height="100px">
+        </div>
+        <div class="clear"></div>
+            <div class="grid_6 bc">
+                <a href="order sum.html"><img src="asset/photos/back.png"></a>
+            </div>
+            <div class="grid_6 bck">
+                <a href="index.html"><img src="asset/photos/ho.png"></a>
+            </div>
+       
+    </div>
+</body>
+</html>
